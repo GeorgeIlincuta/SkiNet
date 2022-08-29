@@ -39,5 +39,11 @@ namespace API.Controllers
         {
             return Ok(await _repo.GetProductTypesAsync());
         }
+
+        [HttpGet("seed")]
+        public void Seed()
+        {
+            _repo.SeedProducts();
+        }
     }
 }
