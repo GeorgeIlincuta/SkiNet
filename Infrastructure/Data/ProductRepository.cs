@@ -44,9 +44,9 @@ namespace Infrastructure.Data
             return await _context.ProductTypes.ToListAsync();
         }
 
-        public async void SeedProducts()
-        {
-             await StoreContextSeed.SeedAsync(_context);
-        }
+        //public async void SeedProducts()
+        //{
+        //     await StoreContextSeed.SeedAsync(_context);
+        //}
     }
 }
